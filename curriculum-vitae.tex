@@ -1,0 +1,138 @@
+\documentclass[letterpaper,10pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{ragged2e}
+
+
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{10in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.5in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Micah Dameron} & \textbf{\today} \\
+Technical Writing \& Blockchain Research & micah.dameron@consensys.net \\
+18184 Swiss Dr|Spring Lake MI, 49456 &  github.com/chronaeon \\
+\end{tabular*}
+\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+	\item \ressubheading{ConsenSys}{Remote, USA}{Technical Scribe|General Contractor}{August 2017 - Present}
+
+\begin{itemize}
+        \resitem{Transcribe technically dense business communications.}
+	\resitem{Communicate effectively with team regarding scheduling, goals, and distribution of notes.}
+	\resitem{Transform the Ethereum Yellowpaper into a more accessible and readable format. \\ (Ongoing.) https://www.github.com/chronaeon/modules.git.}
+\end{itemize}
+
+\end{itemize}
+
+\begin{itemize}
+
+	\item \ressubheading{ConsenSys}{Brooklyn, USA}{Blockchain Ontologist|Alethio Intern}{Summer 2017}
+
+\begin{itemize}
+	\resitem{Use Git to clone, commit, push, and discuss granular changes to definitions in The Ethereum Ontology (https://www.github.com/ConsenSys/EthOn.git).} 
+	\resitem{Create weekly reports for the team summarizing my work activities.}
+	\resitem{Locate and correlate significant events on the Ethereum Blockchain with their description in the ontology.}
+	\resitem{Write a report on best practices for creating \textit{Specialized Online Dictionaries}}.
+	\resitem{\textbf{Accomplishments:}}
+		\begin{itemize}
+				\resitem{Hackathon Team Implements ERC-20 Token Standard in \textit{Viper}}
+				\resitem{Organize and coordinate summer \textit{Casper Meetup} with Vlad Zamfir and Karl Floersch.}
+		\end{itemize}
+\end{itemize}
+
+\item \ressubheading{Burris Optics}{Greeley, USA}{CNC Machinist}{2016-2017}
+
+	\begin{itemize}
+		\resitem{Operate CNC cutting machines to produce aluminum and steel caps, shafts, and clickers for Burris/Steiner precision scopes.}
+		\resitem{Maintain a clean working area and follow written and verbal instructions for safety and quality control.}
+		\resitem{Troubleshoot, fix and monitor dimensions on parts produced. Notate any parts outside of the correct dimensions.}
+	\end{itemize}
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+	\resitem{Able to express complex ideas in generally understandable ways and with a limited number of words.}
+	\resitem{Able to read and edit \textsc{html}, \textsc{xml}, \TeX, and \textsc{C}.}
+	\resitem{Comfortable using a terminal interface and Git.}
+	\resitem{Prone to find loopholes in systems whereby the hard rules of the machine can be utilized to repurpose software beyond its intended use.}
+	\resitem{Advanced knowledge of the \textit{Yellowpaper}, (currently) Ethereum's only full technical specification.}
+	\resitem{Able to interact meaningfully with, think about, and write about burgeoning Blockchain research topics including emerging philosophies, crypto-economics, mechanism design, and security issues.}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+	\ressubheading{Front Range Community College}{Longmont, USA}{Precision Machining Technology}{2014-2016}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Hackathon Awards}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\vspace{-2pt}
+	\begin{center}\begin{tabular*}{6.6in}{l@{\extracolsep{\fill}}r}
+		\multicolumn{2}{c}{\textsc{ConsenSys Intern Hackathon:} \textit{Most Value Added to Ecosystem in 30 Hours} \cftdotfill{\cftdotsep} \textit{2017}} \\
+		\vphantom{E}
+\end{tabular*}
+\end{center}\vspace*{-16pt}
+
+
+\end{document}
