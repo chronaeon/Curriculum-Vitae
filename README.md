@@ -1,2 +1,3 @@
-# fuzzy-invention-cv
-Personal Curriculum Vitae
+# Dire-CV
+
+Personal Curriculum Vitae for chronaeon@github.com.
