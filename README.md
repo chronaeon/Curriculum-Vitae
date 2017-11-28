@@ -1,3 +1,3 @@
-# Dire-CV
+# Curriculum-Vitae
 
-Personal Curriculum Vitae for chronaeon@github.com.
+for chronaeon@github.com.
