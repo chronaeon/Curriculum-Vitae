@@ -3,8 +3,9 @@
 	parskip=half, % Separates paragraphs with some whitespace, use parskip=full for more space or comment out to return to default
 	fromalign=right, % Aligns the from address to the right
 	foldmarks=true, % Prints small fold marks on the left of the page
-	addrfield=true % Set to false to hide the addressee section - you will then want to adjust the height of the body of the letter on the page by adding the following in this section: \makeatletter \@setplength{refvpos}{\useplength{toaddrvpos}} \makeatletter
-	]{scrlttr2}
+	addrfield=false ]{scrlttr2}
+
+\makeatletter \@setplength{refvpos}{\useplength{toaddrvpos}} \makeatletter
 
 \usepackage[T1]{fontenc} % For extra glyphs (accents, etc)
 \usepackage{stix} % Use the Stix font by default
@@ -39,19 +40,15 @@
 %	LETTER CONTENT
 %----------------------------------------------------------------------------------------
 
-\opening{Dear C-Dili Team,}
+\opening{Dear Diligence Team,}
 
-I think I might be able to make a good addition to your team as a security engineer. I've been working intimately with computers since my boyhood, but I never felt motivated to get really good at any language until learning about Ethereum. Solidity, once I realized what it was capable of, was the first language that really held my interest. But when starting to learn Solidity I was disappointed to find that the machine it runs on had a faulty specification. I didn't really want to understand Solidity until I could understand the machine because I knew that understanding the machine would be the only way to estimate my own margin of error correctly when it comes to taking security measures for smart contracts. 
+	I started working with ConsenSys in May 2017, and since then, I've gained significant knowledge about the EVM and what makes it tick. This knowledge has been gained through my work with Alethio on the Ethereum Ontology, and through my own personal work on improving the Yellowpaper. As a result, I know more now than ever about the minutiae regarding all of the interoperating parts that are working at the protocol level of Ethereum. 
 
-	I saw that ConsenSys was hiring for summer interns, so I applied and upon being accepted I decided to team up with Alethio, my intent being to work on the \textit{Ethereum Ontology} (EthOn) and learn as much as I could about the EVM so that I could better understand Solidity and what made it tick. I devoted my summer to creating accurate technical descriptions for EthOn and made good progress--improving the Ethereum Ontology's descriptions--and picking up skills with \textit{Git}, \textit{Bash}, and \textit{XML} along the way. 
+	In the foggily determistic sets of interactions between \textit{high-level code} and \textit{low-level machine behavior}, no shortage of exploits are lurking. A good exploit will allow code to be used for a purpose other than the one for which it was intended. Such bugs are usually not written into the code because they generally occur merely as oversights on the part of the developer or auditor responsible. The only way to be certain about the bugs in a limitless variety of \textsl{abstract upper-level code} like Solidity code, is to intimately understand the limited and bounded nature of the machine operations which that code inevitably initiates and results in. 
+	
+	 Exploring tools and discovering their unintended uses is a natural disposition for me; so exploring smart contracts and finding their unintended uses also comes naturally to me, and doing it for the good of our ecosystem by improving safety and educating our users allows me to add value by building a more responsible smart sontract community at large. 
 
-	As the summer drew to a close however, I did not feel my curiosity had been satisfied about understanding Ethereum as a whole system, and its collection of underlying parts. This feeling was confirmed when Johannes, the spoke lead for Alethio, opined that the Ethereum Ontology would not be following the definitions in the Yellowpaper anymore, but would begin to create its own abstractions from onchain data -- different from those found in the Yellowpaper. This seemed arbitrary to me, and I was inwardly disappointed in my ambitions to understand the EVM clearly. 
-
-	So I decided to hop into the belly of the beast; the last two weeks of my internship I started notating the Yellowpaper in my own style and, pulling out all the mental stops, made up my mind to understand it from cover to cover, regardless of the fact that the math seemed highly intimidating to me. I also realized my work would be much more constructive for the whole Ethereum ecosystem if I turned it into a project that everyone could read, and so everyone could understand the Yellowpaper the way I wanted to. In addition to scribing technical calls for the \textit{Alignment Circle}, this is primarily what I've been working on (as a contractor) since my internship ended in August. The work is coming along nicely and I believe it is adequately evolving to fit the needs of myself and the community as it goes.\footnote{The majority of my work so far can be found in github.com/chronaeon/Modules.git} 
-
-	I want to utilize my increasing knowledge of the minutiae of the EVM to help make smart contracts more secure. I'm a natural at discovering ways to use anything, its intended purposes. I'm also interested in information security more generally and have an insatiable desire to learn everything I can about a field until I've  mastered it. Using the skills I've learned over the summer and throughout the fall, I'd like to spend my time searching through all of the logic in a smart contract, from the abstract user-interface level that the user sees and interacts with, to the concrete machine level that only experienced devs and \textit{Yellowpaper} readers tend to interact with, to identify bugs, oversights, and undiscovered code behaviors that reveal  potential and/or actual security faults in the code. 
-
-\closing{In Blockchain,}
+\closing{Yours in Blockchain,}
 
 \setkomavar*{enclseparator}{Attached} % Change the default "encl:" to "Attached:"
 \encl{CV/Resume} % Attached documents
